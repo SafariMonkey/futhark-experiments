@@ -3,8 +3,5 @@ name = "futhark-experiments"
 version = "0.1.0"
 edition = "2018"
 
-[build-dependencies]
-genfut = "0.4.2"
-
 [dependencies]
 futhark_impl = { path = "./futhark_impl" }
