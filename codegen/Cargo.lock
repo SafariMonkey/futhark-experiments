@@ -147,8 +147,6 @@ dependencies = [
 [[package]]
 name = "genfut"
 version = "0.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fcee3acb5cfbe18cc4a928a1ffd31fef853553cabf8835e64e8ba9a1e90c2e5"
 dependencies = [
  "Inflector",
  "bindgen",

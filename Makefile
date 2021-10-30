@@ -1,6 +1,13 @@
+BACKEND ?= sequential_c
+
+ifneq (,$(wildcard ./.env))
+    include .env
+    export
+endif
+
 .PHONY: run
 run: futhark-codegen
-	cargo run
+	cargo run --features="${BACKEND}"
 
 .PHONY: sync-futhark
 sync-futhark: futhark-deps futhark-codegen

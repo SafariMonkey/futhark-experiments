@@ -4,4 +4,9 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
-futhark_impl = { path = "./futhark_impl" }
+futhark_impl = { path = "./futhark_impl", default-features = false }
+
+[features]
+sequential_c = ["futhark_impl/sequential_c"]
+cuda = ["futhark_impl/cuda"]
+opencl = ["futhark_impl/opencl"]

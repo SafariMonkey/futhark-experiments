@@ -6,4 +6,11 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-genfut = "0.4.2"
+genfut = { version = "0.4.2", path = "../../genfut", default-features = false }
+
+[features]
+sequential_c = ["genfut/sequential_c"]
+cuda = ["genfut/cuda"]
+opencl = ["genfut/opencl"]
+
+default = ["sequential_c", "cuda", "opencl"] 
