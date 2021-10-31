@@ -1,2 +1,3 @@
 require {
+  github.com/diku-dk/sobol 0.2.0 #b34017e4f5c5d343e0233461e85e234446b03892
 }
